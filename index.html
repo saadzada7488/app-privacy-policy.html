@@ -3,168 +3,183 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - Zig Snake</title>
-    <meta name="description" content="Privacy Policy for Zig Snake Android Game">
+    <title>Privacy Policy - Beyond Notes & QR</title>
     <style>
         :root {
-            --bg-color: #0d1117;
-            --card-bg: #161b22;
-            --text-color: #c9d1d9;
-            --heading-color: #58a6ff;
-            --subheading-color: #f0f6fc;
-            --accent-color: #238636;
-            --border-color: #30363d;
-            --muted-color: #8b949e;
+            --primary: #00bcd4;
+            --bg: #0f1115;
+            --card-bg: #181b22;
+            --text-main: #e6edf3;
+            --text-muted: #8b949e;
+            --border: #30363d;
         }
-
-        * {
-            box-sizing: border-box;
-        }
-
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            line-height: 1.65;
-            background-color: var(--bg-color);
-            color: var(--text-color);
+            background-color: var(--bg);
+            color: var(--text-main);
+            line-height: 1.7;
             margin: 0;
-            padding: 16px;
+            padding: 20px;
         }
-
         .container {
-            max-width: 820px;
-            margin: 30px auto;
+            max-width: 860px;
+            margin: 0 auto;
             background: var(--card-bg);
-            padding: 36px;
-            border-radius: 12px;
-            border: 1px solid var(--border-color);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+            padding: 40px;
+            border-radius: 16px;
+            border: 1px solid var(--border);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
         }
-
         h1 {
-            color: var(--heading-color);
-            font-size: 2rem;
-            margin-top: 0;
+            color: var(--primary);
+            font-size: 2.2rem;
             margin-bottom: 8px;
-            border-bottom: 2px solid var(--border-color);
-            padding-bottom: 14px;
+            border-bottom: 2px solid var(--border);
+            padding-bottom: 16px;
         }
-
-        .effective-date {
-            font-size: 0.9rem;
-            color: var(--muted-color);
-            margin-bottom: 24px;
-        }
-
         h2 {
-            color: var(--subheading-color);
-            margin-top: 28px;
+            color: #58a6ff;
+            font-size: 1.4rem;
+            margin-top: 32px;
             margin-bottom: 12px;
-            font-size: 1.3rem;
-            border-bottom: 1px solid rgba(48, 54, 61, 0.5);
-            padding-bottom: 6px;
         }
-
-        p, ul {
-            margin-top: 0;
-            margin-bottom: 16px;
+        h3 {
+            color: #79c0ff;
+            font-size: 1.1rem;
+            margin-top: 20px;
         }
-
+        p, li {
+            color: #c9d1d9;
+            font-size: 1rem;
+        }
         ul {
             padding-left: 24px;
+            margin-bottom: 16px;
         }
-
         li {
             margin-bottom: 8px;
         }
-
+        .effective-date {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-bottom: 24px;
+        }
+        .highlight-box {
+            background-color: rgba(0, 188, 212, 0.08);
+            border-left: 4px solid var(--primary);
+            padding: 16px 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
         a {
-            color: var(--heading-color);
+            color: var(--primary);
             text-decoration: none;
         }
-
         a:hover {
             text-decoration: underline;
         }
-
-        .highlight-box {
-            background: rgba(35, 134, 54, 0.1);
-            border-left: 4px solid var(--accent-color);
-            padding: 14px 18px;
-            border-radius: 6px;
-            margin: 20px 0;
-        }
-
-        .contact-box {
-            background: #21262d;
-            padding: 20px;
-            border-radius: 8px;
-            border: 1px solid var(--border-color);
-            margin-top: 28px;
-        }
-
-        .contact-box p {
-            margin-bottom: 8px;
-        }
-
         footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border);
             text-align: center;
-            margin-top: 28px;
-            font-size: 0.85rem;
-            color: var(--muted-color);
+            color: var(--text-muted);
+            font-size: 0.9rem;
         }
     </style>
 </head>
 <body>
 
 <div class="container">
-    <h1>Privacy Policy for Zig Snake</h1>
-    <div class="effective-date">Last Updated: September 16, 2026</div>
-
-    <p>This Privacy Policy governs the use of the mobile game application <strong>Zig Snake</strong> ("the Application", "the App", or "Game"), developed and published by <strong>Saad Zada</strong> ("Developer", "we", "us", or "our").</p>
+    <h1>Privacy Policy</h1>
+    <p class="effective-date"><strong>Last Updated & Effective Date:</strong> October 2026</p>
 
     <div class="highlight-box">
-        <strong>Summary:</strong> Zig Snake does not collect or request any personal identification information (such as your real name, phone number, physical address, or contacts). All core gameplay progress is saved locally on your device. We use Google AdMob solely for in-game advertisements and rewarded gameplay features.
+        <strong>Beyond Notes & QR</strong> ("we", "our", or "us") respects your privacy and is committed to protecting your personal data. This Privacy Policy explains how our Android application collects, uses, protects, and discloses information when you use our mobile application.
     </div>
 
-    <h2>1. Information We Collect</h2>
-    <p>We do not collect any Personally Identifiable Information (PII) directly from players. When you play the Game, we do not require you to create an account, register, or provide private details.</p>
+    <h2>1. Information We Collect & How We Use It</h2>
 
-    <h2>2. Third-Party Advertising & Identifiers (Google AdMob)</h2>
-    <p>The Application integrates <strong>Google AdMob</strong> to display banner, interstitial, and rewarded video ads. Google AdMob and its advertising partners may automatically collect certain device and usage data to serve relevant advertisements, including:</p>
+    <h3>A. Personal Information (Optional Account Creation)</h3>
+    <p>You can use Beyond Notes & QR completely offline without creating an account. If you choose to sign in using Google Sign-In or Firebase Authentication to enable cloud backup and synchronization across devices, we collect:</p>
     <ul>
-        <li><strong>Google Advertising ID (AAID):</strong> Used by Google Play Services to personalize or cap the frequency of advertisements.</li>
-        <li><strong>Device Information:</strong> Device model, operating system version, screen resolution, and language settings.</li>
-        <li><strong>Ad Interaction Metrics:</strong> Information regarding whether an advertisement was loaded, clicked, or completed (e.g., watching a rewarded ad to revive or earn in-game coins).</li>
-    </ul>
-    <p>You can reset your Advertising ID or opt out of personalized ads at any time via your Android device settings: <em>Settings &rarr; Google &rarr; Ads</em>.</p>
-    <p>For more details on how Google processes ad data, please review:</p>
-    <ul>
-        <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a></li>
-        <li><a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener noreferrer">How Google uses information from sites or apps that use our services</a></li>
+        <li><strong>Email Address and Name:</strong> Used solely to identify your account and authenticate your cloud sync session.</li>
+        <li><strong>Profile Picture URL:</strong> Used solely for in-app user avatar display.</li>
     </ul>
 
-    <h2>3. Local Storage of Game Data</h2>
-    <p>Your high scores, collected coins, earned diamonds, and unlocked snake skins are stored locally on your device using secure application internal storage. We do not transmit or host your gameplay scores on an external server. Please note that clearing the game's cache/data or uninstalling the app may reset your local progress.</p>
+    <h3>B. User Generated Content (Notes, Drawings & QR Codes)</h3>
+    <ul>
+        <li><strong>Local Storage:</strong> Your notes, checklists, canvas drawings, and generated QR codes are stored locally on your device using a private SQLite/Room database.</li>
+        <li><strong>Cloud Backup (Optional):</strong> If you enable cloud backup, your note data is securely transmitted and stored in your private Google Firebase Firestore database, accessible only with your verified credentials.</li>
+        <li><strong>Biometric Security:</strong> If you lock individual notes using Fingerprint / Biometrics, all biometric verification is performed directly by your device's Android OS hardware security module. <em>We never access, store, or transmit your biometric or fingerprint data.</em></li>
+    </ul>
 
-    <h2>4. Children’s Privacy</h2>
-    <p>Zig Snake is built for general audiences of all ages. We do not knowingly collect personal information from children under the age of 13. If you believe that non-compliant data has been inadvertently collected through third-party ad networks, please contact us immediately so we can address the concern.</p>
+    <h3>C. Device Identifiers & Analytics (Automatically Collected by Third-Party SDKs)</h3>
+    <p>To serve advertisements and maintain app reliability, our third-party service providers automatically collect standard device information:</p>
+    <ul>
+        <li><strong>Google Advertising ID (AD_ID):</strong> Used by Google AdMob to serve relevant ads, limit frequency, and combat ad fraud.</li>
+        <li><strong>Crash Logs & Performance Diagnostics:</strong> Anonymous technical data such as device model, OS version, and stack traces to fix crashes and improve performance.</li>
+        <li><strong>IP Address:</strong> Used by Google AdMob to estimate coarse (city/country level) location for ad serving and fraud prevention.</li>
+    </ul>
 
-    <h2>5. Data Retention and Security</h2>
-    <p>Because we do not store user accounts or personal profiles on remote servers, we do not retain your personal data. All network communication with Google ad delivery systems is encrypted using industry-standard HTTPS (TLS/SSL) protocols.</p>
+    <h2>2. Third-Party Services & Advertising</h2>
+    <p>Our app integrates third-party SDKs that have their own privacy policies governing data usage:</p>
+    <ul>
+        <li>
+            <strong>Google AdMob (Advertising):</strong> 
+            We use Google AdMob to display banner, interstitial, and rewarded video ads. AdMob may collect and process device identifiers, IP addresses, and interaction data. 
+            <br>Read Google's Privacy Policy: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a>
+        </li>
+        <li>
+            <strong>Google Play Services:</strong> 
+            Provides essential background services and API integration.
+            <br>Read Google Play Services Policy: <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">How Google uses information from sites or apps</a>
+        </li>
+        <li>
+            <strong>Google Firebase (Authentication & Cloud Firestore):</strong> 
+            Provides secure cloud backup and user account authentication.
+            <br>Read Firebase Privacy: <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">https://firebase.google.com/support/privacy</a>
+        </li>
+    </ul>
 
-    <h2>6. Changes to This Privacy Policy</h2>
-    <p>We may update this Privacy Policy from time to time to reflect game updates or compliance requirements. Any modifications will be posted on this page with an updated revision date.</p>
+    <h2>3. Device Permissions Requested</h2>
+    <p>Our application requests only the permissions necessary to provide core features:</p>
+    <ul>
+        <li><strong>Camera (android.permission.CAMERA):</strong> Used exclusively when you choose to scan QR codes or capture photos directly for your notes. Video or camera streams are processed locally in real-time and are never transmitted to external servers without your action.</li>
+        <li><strong>Notifications & Alarms (POST_NOTIFICATIONS, SCHEDULE_EXACT_ALARM):</strong> Used to deliver local note reminders and scheduled alarm alerts on time.</li>
+        <li><strong>Biometric / Fingerprint (USE_BIOMETRIC):</strong> Used locally on device to unlock password-protected notes.</li>
+        <li><strong>Internet & Network State:</strong> Required for syncing notes with Firebase and requesting AdMob advertisements.</li>
+    </ul>
 
-    <h2>7. Contact Information</h2>
-    <div class="contact-box">
-        <p>If you have any questions, concerns, or requests regarding this Privacy Policy, feel free to reach out:</p>
-        <p><strong>Developer:</strong> Saad Zada</p>
-        <p><strong>Application:</strong> Zig Snake</p>
-        <p><strong>Email:</strong> <a href="mailto:szzada02@gmail.com">szzada02@gmail.com</a></p>
-    </div>
+    <h2>4. Data Security & Encryption</h2>
+    <p>We implement industry-standard security measures to safeguard your information:</p>
+    <ul>
+        <li><strong>Encryption in Transit:</strong> All data transmitted between your device, Firebase servers, and AdMob servers is encrypted using modern Transport Layer Security (TLS/HTTPS).</li>
+        <li><strong>Local Sandboxing:</strong> Local notes are stored inside the app's private sandbox directory, inaccessible to other apps on your device.</li>
+    </ul>
+
+    <h2>5. Data Retention & Deletion Rights</h2>
+    <p>You have full control over your data at all times:</p>
+    <ul>
+        <li><strong>Local Data:</strong> You can delete any note, drawing, or QR code at any time from within the app. Clearing app data or uninstalling the app permanently removes all local data.</li>
+        <li><strong>Account & Cloud Data Deletion:</strong> If you have an active cloud account and wish to delete your synced notes and account information permanently, you can delete your notes in-app or contact our support email at <strong>szzada02@gmail.com</strong>. We will permanently delete your records within 30 days.</li>
+    </ul>
+
+    <h2>6. Children’s Privacy</h2>
+    <p>Our app is not directed to children under the age of 13. We do not knowingly collect personal identifiable information from children under 13. If you believe a child under 13 has provided us with personal data, please contact us immediately so we can remove it.</p>
+
+    <h2>7. Changes to This Privacy Policy</h2>
+    <p>We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated "Effective Date". We encourage you to review this policy periodically.</p>
+
+    <h2>8. Contact Us</h2>
+    <p>If you have any questions, feedback, or requests regarding this Privacy Policy or your data, please contact us at:</p>
+    <ul>
+        <li><strong>Developer:</strong> MrHideo / Beyond App Team</li>
+        <li><strong>Email:</strong> <a href="mailto:szzada02@gmail.com">szzada02@gmail.com</a></li>
+    </ul>
 
     <footer>
-        &copy; 2026 Zig Snake. All rights reserved.
+        &copy; 2026 Beyond Notes & QR. All rights reserved.
     </footer>
 </div>
 
