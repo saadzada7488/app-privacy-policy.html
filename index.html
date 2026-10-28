@@ -3,87 +3,207 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - Beyond Notes & QR</title>
+    <title>Privacy Policy - BEYOND</title>
+    <meta name="description" content="Official Privacy Policy for BEYOND (Beyond Notes & QR) mobile application on Google Play.">
     <style>
         :root {
             --primary: #00bcd4;
-            --bg: #0f1115;
-            --card-bg: #181b22;
-            --text-main: #e6edf3;
-            --text-muted: #8b949e;
-            --border: #30363d;
+            --primary-hover: #26c6da;
+            --bg-color: #0c0e12;
+            --card-bg: #14171f;
+            --card-border: #232936;
+            --text-main: #f0f3f6;
+            --text-secondary: #9da7b3;
+            --text-code: #ff7b72;
+            --badge-bg: rgba(0, 188, 212, 0.12);
+            --badge-border: rgba(0, 188, 212, 0.35);
+            --callout-bg: rgba(33, 150, 243, 0.08);
+            --callout-border: #2196f3;
         }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            background-color: var(--bg);
+            background-color: var(--bg-color);
             color: var(--text-main);
-            line-height: 1.7;
-            margin: 0;
-            padding: 20px;
+            line-height: 1.75;
+            padding: 30px 16px;
         }
+
         .container {
-            max-width: 860px;
+            max-width: 900px;
             margin: 0 auto;
             background: var(--card-bg);
-            padding: 40px;
-            border-radius: 16px;
-            border: 1px solid var(--border);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            border: 1px solid var(--card-border);
+            border-radius: 20px;
+            padding: 40px 48px;
+            box-shadow: 0 16px 40px rgba(0, 0, 0, 0.6);
         }
-        h1 {
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 24px 20px;
+                border-radius: 12px;
+            }
+        }
+
+        .header {
+            border-bottom: 2px solid var(--card-border);
+            padding-bottom: 24px;
+            margin-bottom: 32px;
+        }
+
+        .app-badge {
+            display: inline-block;
+            background: var(--badge-bg);
+            border: 1px solid var(--badge-border);
             color: var(--primary);
-            font-size: 2.2rem;
-            margin-bottom: 8px;
-            border-bottom: 2px solid var(--border);
-            padding-bottom: 16px;
+            font-weight: 600;
+            font-size: 0.85rem;
+            padding: 4px 14px;
+            border-radius: 999px;
+            margin-bottom: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
-        h2 {
-            color: #58a6ff;
-            font-size: 1.4rem;
-            margin-top: 32px;
-            margin-bottom: 12px;
+
+        h1 {
+            color: var(--text-main);
+            font-size: 2.4rem;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            margin-bottom: 10px;
         }
-        h3 {
-            color: #79c0ff;
-            font-size: 1.1rem;
-            margin-top: 20px;
-        }
-        p, li {
-            color: #c9d1d9;
-            font-size: 1rem;
-        }
-        ul {
-            padding-left: 24px;
-            margin-bottom: 16px;
-        }
-        li {
-            margin-bottom: 8px;
-        }
+
         .effective-date {
-            color: var(--text-muted);
+            color: var(--text-secondary);
             font-size: 0.95rem;
-            margin-bottom: 24px;
         }
-        .highlight-box {
-            background-color: rgba(0, 188, 212, 0.08);
-            border-left: 4px solid var(--primary);
+
+        .callout {
+            background-color: var(--callout-bg);
+            border-left: 4px solid var(--callout-border);
             padding: 16px 20px;
             border-radius: 8px;
-            margin: 20px 0;
+            margin: 24px 0;
+            color: var(--text-main);
+            font-size: 1rem;
         }
+
+        .toc-box {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid var(--card-border);
+            border-radius: 12px;
+            padding: 20px 24px;
+            margin: 28px 0;
+        }
+
+        .toc-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 12px;
+        }
+
+        .toc-list {
+            list-style-type: decimal;
+            padding-left: 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 8px;
+        }
+
+        .toc-list a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .toc-list a:hover {
+            color: var(--primary);
+            text-decoration: underline;
+        }
+
+        h2 {
+            color: var(--primary);
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-top: 40px;
+            margin-bottom: 14px;
+            border-bottom: 1px solid var(--card-border);
+            padding-bottom: 8px;
+        }
+
+        h3 {
+            color: #79c0ff;
+            font-size: 1.15rem;
+            margin-top: 24px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: var(--text-secondary);
+            margin-bottom: 14px;
+            font-size: 1rem;
+        }
+
+        ul {
+            padding-left: 22px;
+            margin-bottom: 18px;
+        }
+
+        li {
+            color: var(--text-secondary);
+            margin-bottom: 8px;
+        }
+
+        li strong {
+            color: var(--text-main);
+        }
+
+        .permission-card {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid var(--card-border);
+            border-radius: 10px;
+            padding: 14px 18px;
+            margin-bottom: 12px;
+        }
+
+        .permission-name {
+            font-weight: 700;
+            color: #58a6ff;
+            margin-bottom: 4px;
+        }
+
         a {
             color: var(--primary);
             text-decoration: none;
         }
+
         a:hover {
+            color: var(--primary-hover);
             text-decoration: underline;
         }
+
+        .contact-box {
+            background: rgba(0, 188, 212, 0.05);
+            border: 1px solid var(--badge-border);
+            border-radius: 12px;
+            padding: 24px;
+            margin-top: 30px;
+        }
+
         footer {
-            margin-top: 40px;
-            padding-top: 20px;
-            border-top: 1px solid var(--border);
+            margin-top: 48px;
+            padding-top: 24px;
+            border-top: 1px solid var(--card-border);
             text-align: center;
-            color: var(--text-muted);
+            color: #6e7681;
             font-size: 0.9rem;
         }
     </style>
@@ -91,95 +211,145 @@
 <body>
 
 <div class="container">
-    <h1>Privacy Policy</h1>
-    <p class="effective-date"><strong>Last Updated & Effective Date:</strong> October 2026</p>
-
-    <div class="highlight-box">
-        <strong>Beyond Notes & QR</strong> ("we", "our", or "us") respects your privacy and is committed to protecting your personal data. This Privacy Policy explains how our Android application collects, uses, protects, and discloses information when you use our mobile application.
+    <div class="header">
+        <span class="app-badge">Official Policy</span>
+        <h1>Privacy Policy</h1>
+        <p class="effective-date"><strong>Application:</strong> BEYOND (Beyond Notes & QR)</p>
+        <p class="effective-date"><strong>Effective & Last Updated Date:</strong> October 28, 2026</p>
     </div>
 
-    <h2>1. Information We Collect & How We Use It</h2>
+    <div class="callout">
+        <strong>BEYOND</strong> ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy details how the BEYOND Android mobile application handles, secures, and protects your information, local files, device permissions, and personal data in strict compliance with the Google Play Developer Program Policies, GDPR, and international privacy laws.
+    </div>
 
-    <h3>A. Personal Information (Optional Account Creation)</h3>
-    <p>You can use Beyond Notes & QR completely offline without creating an account. If you choose to sign in using Google Sign-In or Firebase Authentication to enable cloud backup and synchronization across devices, we collect:</p>
+    <div class="toc-box">
+        <div class="toc-title">Table of Contents</div>
+        <ol class="toc-list">
+            <li><a href="#section-1">1. Information We Collect</a></li>
+            <li><a href="#section-2">2. How We Store & Secure Data</a></li>
+            <li><a href="#section-3">3. Device Permissions Explained</a></li>
+            <li><a href="#section-4">4. Third-Party Services & Ads</a></li>
+            <li><a href="#section-5">5. Beyond AI & Generative Services</a></li>
+            <li><a href="#section-6">6. Data Retention & Deletion</a></li>
+            <li><a href="#section-7">7. Children's Privacy (COPPA)</a></li>
+            <li><a href="#section-8">8. User Rights (GDPR & CCPA)</a></li>
+            <li><a href="#section-9">9. Contact & Support Information</a></li>
+        </ol>
+    </div>
+
+    <h2 id="section-1">1. Information We Collect</h2>
+    <p>BEYOND is built with a <strong>privacy-first, offline-ready architecture</strong>. We only process information required for your direct note-taking, sketching, and organization experience:</p>
+
+    <h3>A. User Generated Content (Notes, Drawings & QR Codes)</h3>
     <ul>
-        <li><strong>Email Address and Name:</strong> Used solely to identify your account and authenticate your cloud sync session.</li>
-        <li><strong>Profile Picture URL:</strong> Used solely for in-app user avatar display.</li>
+        <li><strong>Text Notes & Rich Content:</strong> All your notes, markdown documents, checklists, drawings, and canvas sketches are saved in the app's secure private sandbox storage on your local device.</li>
+        <li><strong>Biometric Lock Protection:</strong> If you lock specific notes with PIN or Fingerprint / Biometric authentication, all biometric checks are executed entirely on-device by the Android Operating System hardware keystore. <em>We never receive, access, or transmit your fingerprint or biometric keys.</em></li>
     </ul>
 
-    <h3>B. User Generated Content (Notes, Drawings & QR Codes)</h3>
+    <h3>B. Account & Cloud Sync Data (Optional)</h3>
     <ul>
-        <li><strong>Local Storage:</strong> Your notes, checklists, canvas drawings, and generated QR codes are stored locally on your device using a private SQLite/Room database.</li>
-        <li><strong>Cloud Backup (Optional):</strong> If you enable cloud backup, your note data is securely transmitted and stored in your private Google Firebase Firestore database, accessible only with your verified credentials.</li>
-        <li><strong>Biometric Security:</strong> If you lock individual notes using Fingerprint / Biometrics, all biometric verification is performed directly by your device's Android OS hardware security module. <em>We never access, store, or transmit your biometric or fingerprint data.</em></li>
+        <li><strong>Google Sign-In:</strong> You can use BEYOND 100% offline without creating an account. If you voluntarily sign in with Google to enable cross-device cloud sync and backup, we receive your verified Google Account Name, Email Address, and Avatar URL to authenticate your private Firebase Firestore database partition.</li>
+        <li><strong>No Unauthorized Access:</strong> We never sell, rent, or share your account information or notes with third-party data brokers.</li>
     </ul>
 
-    <h3>C. Device Identifiers & Analytics (Automatically Collected by Third-Party SDKs)</h3>
-    <p>To serve advertisements and maintain app reliability, our third-party service providers automatically collect standard device information:</p>
+    <h3>C. Automatically Collected Technical Data</h3>
     <ul>
-        <li><strong>Google Advertising ID (AD_ID):</strong> Used by Google AdMob to serve relevant ads, limit frequency, and combat ad fraud.</li>
-        <li><strong>Crash Logs & Performance Diagnostics:</strong> Anonymous technical data such as device model, OS version, and stack traces to fix crashes and improve performance.</li>
-        <li><strong>IP Address:</strong> Used by Google AdMob to estimate coarse (city/country level) location for ad serving and fraud prevention.</li>
+        <li><strong>Diagnostics & Crash Logs:</strong> Anonymous hardware specs (device manufacturer, model, Android OS version) collected by Google Play Services to identify bugs and improve stability.</li>
+        <li><strong>Advertising Identifiers:</strong> Google Advertising ID (AD_ID) and coarse location used by Google AdMob to deliver advertisements and prevent ad fraud.</li>
     </ul>
 
-    <h2>2. Third-Party Services & Advertising</h2>
-    <p>Our app integrates third-party SDKs that have their own privacy policies governing data usage:</p>
+    <h2 id="section-2">2. How We Store & Secure Data</h2>
+    <ul>
+        <li><strong>Local Data Sandboxing:</strong> All local notes, voice memos, and canvas sketches are isolated in the app's internal private storage directory, inaccessible to any other applications on your device.</li>
+        <li><strong>Encrypted In-Transit Transmission:</strong> Any network communication (such as Firebase Cloud Sync, Google AdMob ad requests, or AI query processing) is strictly encrypted using modern Transport Layer Security (TLS 1.3 / HTTPS).</li>
+        <li><strong>Zero Unnecessary Server Backdoors:</strong> If cloud sync is not enabled, your notes and sketches remain entirely confined to your physical device.</li>
+    </ul>
+
+    <h2 id="section-3">3. Device Permissions Explained</h2>
+    <p>Below is an exhaustive list of every Android permission declared by BEYOND and its exact functional purpose:</p>
+
+    <div class="permission-card">
+        <div class="permission-name">android.permission.CAMERA</div>
+        <p>Required solely when you use the built-in Camera feature to attach fresh photos to your notes or when scanning QR codes directly within the app. Camera frames are processed in real-time in memory and are never uploaded or streamed without your explicit action.</p>
+    </div>
+
+    <div class="permission-card">
+        <div class="permission-name">android.permission.POST_NOTIFICATIONS</div>
+        <p>Used on Android 13+ to display reminders and scheduled alert notifications for your timed tasks, checklists, and calendar alarms.</p>
+    </div>
+
+    <div class="permission-card">
+        <div class="permission-name">android.permission.SCHEDULE_EXACT_ALARM & RECEIVE_BOOT_COMPLETED</div>
+        <p>Allows BEYOND to trigger exact-time alarms for your note reminders even if your phone is in Doze/standby mode, and restores your active alarm reminders automatically when you restart or reboot your smartphone.</p>
+    </div>
+
+    <div class="permission-card">
+        <div class="permission-name">android.permission.VIBRATE</div>
+        <p>Used to provide tactile haptic feedback during note actions, canvas brush gestures, and notification buzz alerts for your reminders.</p>
+    </div>
+
+    <div class="permission-card">
+        <div class="permission-name">android.permission.INTERNET & ACCESS_NETWORK_STATE</div>
+        <p>Enables optional cloud synchronization with Google Firebase, loading AdMob ads, and verifying internet availability before network operations.</p>
+    </div>
+
+    <div class="permission-card">
+        <div class="permission-name">Zero-Permission Media Access (Photo Picker)</div>
+        <p>In full compliance with Google Play's Media and Storage Policy, BEYOND does not request broad storage permissions. Instead, it uses Android's privacy-preserving system Photo Picker, granting the app temporary access only to the exact photos you specifically choose to import.</p>
+    </div>
+
+    <h2 id="section-4">4. Third-Party Services & Advertising</h2>
     <ul>
         <li>
-            <strong>Google AdMob (Advertising):</strong> 
-            We use Google AdMob to display banner, interstitial, and rewarded video ads. AdMob may collect and process device identifiers, IP addresses, and interaction data. 
-            <br>Read Google's Privacy Policy: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a>
+            <strong>Google AdMob:</strong> Serves banner and interstitial advertisements inside the app. AdMob processes device identifiers (AD_ID), coarse IP location, and performance metrics.
+            <br><a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Learn how Google manages AdMob advertising data &rarr;</a>
         </li>
         <li>
-            <strong>Google Play Services:</strong> 
-            Provides essential background services and API integration.
-            <br>Read Google Play Services Policy: <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">How Google uses information from sites or apps</a>
+            <strong>Google Firebase (Authentication & Cloud Firestore):</strong> Manages secure user authentication (Google Sign-In) and optional cloud database sync.
+            <br><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Learn about Firebase Privacy & Security &rarr;</a>
         </li>
         <li>
-            <strong>Google Firebase (Authentication & Cloud Firestore):</strong> 
-            Provides secure cloud backup and user account authentication.
-            <br>Read Firebase Privacy: <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">https://firebase.google.com/support/privacy</a>
+            <strong>Google Play Services:</strong> Delivers essential Android system libraries, in-app updates, and device-level integrations.
+            <br><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy &rarr;</a>
         </li>
     </ul>
 
-    <h2>3. Device Permissions Requested</h2>
-    <p>Our application requests only the permissions necessary to provide core features:</p>
+    <h2 id="section-5">5. Beyond AI & Generative Services</h2>
+    <p>BEYOND includes an optional AI Assistant ("Beyond AI") to assist users with text summarization, content brainstorming, and creative suggestions:</p>
     <ul>
-        <li><strong>Camera (android.permission.CAMERA):</strong> Used exclusively when you choose to scan QR codes or capture photos directly for your notes. Video or camera streams are processed locally in real-time and are never transmitted to external servers without your action.</li>
-        <li><strong>Notifications & Alarms (POST_NOTIFICATIONS, SCHEDULE_EXACT_ALARM):</strong> Used to deliver local note reminders and scheduled alarm alerts on time.</li>
-        <li><strong>Biometric / Fingerprint (USE_BIOMETRIC):</strong> Used locally on device to unlock password-protected notes.</li>
-        <li><strong>Internet & Network State:</strong> Required for syncing notes with Firebase and requesting AdMob advertisements.</li>
+        <li><strong>Encrypted Processing:</strong> Prompts sent to Beyond AI are transmitted securely over TLS to AI processing endpoints (Google Gemini API).</li>
+        <li><strong>Ephemeral Image Processing:</strong> If you attach an image or diagram for AI explanation, the image is processed ephemerally in memory solely to generate your answer and is not retained or used for public training.</li>
+        <li><strong>In-App Content Reporting:</strong> In strict compliance with Google Play Generative AI requirements, users can instantly flag or report any inappropriate, biased, or harmful AI response directly from the chat screen using the built-in report option.</li>
     </ul>
 
-    <h2>4. Data Security & Encryption</h2>
-    <p>We implement industry-standard security measures to safeguard your information:</p>
+    <h2 id="section-6">6. Data Retention & Deletion Policy</h2>
+    <p>You maintain complete ownership and control over your personal data:</p>
     <ul>
-        <li><strong>Encryption in Transit:</strong> All data transmitted between your device, Firebase servers, and AdMob servers is encrypted using modern Transport Layer Security (TLS/HTTPS).</li>
-        <li><strong>Local Sandboxing:</strong> Local notes are stored inside the app's private sandbox directory, inaccessible to other apps on your device.</li>
+        <li><strong>Instant Local Deletion:</strong> You can delete any note, drawing, or image at any time. When deleted, it is immediately and permanently wiped from local device storage.</li>
+        <li><strong>Cloud Account Deletion Request:</strong> If you utilized cloud sync and wish to permanently delete your account, authentication tokens, and all cloud-stored notes from our database, you can email our team at <a href="mailto:szzada02@gmail.com">szzada02@gmail.com</a> with the subject <em>"Data Deletion Request"</em>. All associated cloud records will be verified and permanently purged within 30 days.</li>
     </ul>
 
-    <h2>5. Data Retention & Deletion Rights</h2>
-    <p>You have full control over your data at all times:</p>
+    <h2 id="section-7">7. Children's Privacy (COPPA Compliance)</h2>
+    <p>BEYOND is intended for a general audience and is not directed at children under the age of 13. We do not knowingly solicit, collect, or store personal identifiable information from children under 13 years of age. If you believe a child has provided us with personal data, please contact us immediately so we can remove it.</p>
+
+    <h2 id="section-8">8. International User Rights (GDPR & CCPA/CPRA)</h2>
     <ul>
-        <li><strong>Local Data:</strong> You can delete any note, drawing, or QR code at any time from within the app. Clearing app data or uninstalling the app permanently removes all local data.</li>
-        <li><strong>Account & Cloud Data Deletion:</strong> If you have an active cloud account and wish to delete your synced notes and account information permanently, you can delete your notes in-app or contact our support email at <strong>szzada02@gmail.com</strong>. We will permanently delete your records within 30 days.</li>
+        <li><strong>EEA / UK Users (GDPR):</strong> You have the right to access, rectify, export, or erase your personal data, as well as the right to restrict or object to certain processing activities.</li>
+        <li><strong>California Residents (CCPA / CPRA):</strong> You have the right to know what personal data is collected, request its deletion, and opt out of the sale or sharing of personal data. <em>We do not sell your personal data.</em></li>
     </ul>
 
-    <h2>6. Children’s Privacy</h2>
-    <p>Our app is not directed to children under the age of 13. We do not knowingly collect personal identifiable information from children under 13. If you believe a child under 13 has provided us with personal data, please contact us immediately so we can remove it.</p>
-
-    <h2>7. Changes to This Privacy Policy</h2>
-    <p>We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated "Effective Date". We encourage you to review this policy periodically.</p>
-
-    <h2>8. Contact Us</h2>
-    <p>If you have any questions, feedback, or requests regarding this Privacy Policy or your data, please contact us at:</p>
-    <ul>
-        <li><strong>Developer:</strong> MrHideo / Beyond App Team</li>
-        <li><strong>Email:</strong> <a href="mailto:szzada02@gmail.com">szzada02@gmail.com</a></li>
-    </ul>
+    <h2 id="section-9">9. Contact & Support Information</h2>
+    <div class="contact-box">
+        <p>If you have any questions, feedback, concerns, or requests regarding this Privacy Policy or how your data is handled in <strong>BEYOND</strong>, please contact us directly:</p>
+        <p><strong>App Name:</strong> BEYOND (Beyond Notes & QR)</p>
+        <p><strong>Developer:</strong> MrHideo / BEYOND Development Team</p>
+        <p><strong>Official Contact Email:</strong> <a href="mailto:szzada02@gmail.com">szzada02@gmail.com</a></p>
+        <p><strong>Response Time:</strong> We typically respond to all privacy inquiries and data requests within 24 to 48 business hours.</p>
+    </div>
 
     <footer>
-        &copy; 2026 Beyond Notes & QR. All rights reserved.
+        <p>&copy; 2026 BEYOND (Beyond Notes & QR). All rights reserved.</p>
+        <p>This privacy policy is hosted in compliance with Google Play Store Developer Distribution Agreement.</p>
     </footer>
 </div>
 
